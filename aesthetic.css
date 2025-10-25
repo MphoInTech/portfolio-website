@@ -1,0 +1,27 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: pink;
+  padding: 15px 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font-size: 30px;
+  padding: 10px;
+}
+ul {
+  gap: 50px;
+  list-style: none;
+  padding: 10px 10px;
+}
+a {
+  color: black;
+}
