@@ -25,3 +25,39 @@ ul {
 a {
   color: black;
 }
+.abt-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  border: dotted;
+  padding: 20px 50px;
+  gap: 30px;
+}
+.text {
+  flex: 1;
+}
+h2 {
+  padding-top: 20px;
+}
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+.pic-and-buttns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.text-and-certs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
