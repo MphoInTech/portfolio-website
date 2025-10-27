@@ -29,16 +29,25 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  margin: 20px auto;
   border: dotted;
   padding: 20px 50px;
   gap: 30px;
+  max-width: 800px;
+  background: lightpink;
+  border-radius: 12px;
 }
 .text {
   flex: 1;
 }
 h2 {
+  align-items: left;
   padding-top: 20px;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  align-items: left;
 }
 img {
   width: 200px;
@@ -60,4 +69,85 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+.abt-me-sect {
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  align-items: start;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  background: lightpink;
+  border: dotted;
+  border-radius: 12px;
+}
+h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.skills-sect-description {
+  margin-bottom: 30px;
+}
+.skills-sect {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  background: lightpink;
+  border: dotted;
+  border-radius: 12px;
+}
+.skill {
+  margin-bottom: 20px;
+}
+.skill-name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.skill-bar {
+  width: 100%;
+  height: 15px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.skill-level {
+  height: 100%;
+  border-radius: 8px;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+.skill-level.beginner {
+  width: 30%;
+  background-color: plum;
+}
+.skill-level.intermediate {
+  width: 60%;
+  background-color: purple;
+}
+h5 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+.education-sect {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  background: lightpink;
+  border: dotted;
+  border-radius: 12px;
+}
+footer {
+  background: pink;
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
