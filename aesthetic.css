@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 header {
-  background: pink;
+  background: #defcf9;
   padding: 15px 0;
 }
 nav {
@@ -16,6 +16,16 @@ nav {
 .logo {
   font-size: 30px;
   padding: 10px;
+  color: #000;
+}
+.download-CV {
+  background: #cca8e9;
+  padding: 15px 20px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
 }
 ul {
   gap: 50px;
@@ -23,7 +33,7 @@ ul {
   padding: 10px 10px;
 }
 a {
-  color: black;
+  color: #000;
 }
 .abt-summary {
   display: flex;
