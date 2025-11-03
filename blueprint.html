@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="aesthetic.css" />
   </head>
   <body>
+    <!--Navigation Section-->
     <header>
       <nav>
         <h1 class="logo">MDM</h1>
         <ul>
-          <li>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Education</a>
-            <a href="">Projects</a>
-            <a href="">Contact Me</a>
-          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
         <button class="download-CV">Download my CV</button>
       </nav>
@@ -27,13 +26,16 @@
       <div class="abt-summary">
         <div class="text">
           <div class="text-and-certs">
-            <h2>Hi, my name is Mpho Dimakatso Modise.</h2>
-            <h3>I'm a Web Developer.</h3>
+            <h2>
+              Hi, my name is <span class="name">Mpho Dimakatso Modise.</span>
+            </h2>
             <p>
               I enjoy building sleek, functional websites that make an impact.
               Clean code, creative ideas and good vibes only.
             </p>
-            <button class="certs">Certifications</button>
+            <a href="#certifications"
+              ><button class="certs">Certifications</button></a
+            >
           </div>
         </div>
         <div class="pic-and-buttns">
@@ -44,107 +46,121 @@
           </div>
         </div>
       </div>
-      <!-- Aboutt Me Section -->
-      <div class="abt-me-sect">
-        <h4>Who I Am</h4>
+
+      <!-- About Me Section -->
+      <div id="about" class="abt-me-sect">
+        <h4>I am a <span class="type-effect"></span></h4>
+
         <p>
-          I'm a motivated and detail-oriented web developer with a strong
-          foundation in
-          <strong>Python, Cloud Computing, Data Analytics</strong> and<strong>
-            Artificial Intelligence.</strong
+          <span class="bullet">&#10003;</span> I'm a motivated and detail
+          oriented <strong>web developer</strong> with a strong foundation in
+          <strong class="accent-skill">Python</strong>,
+          <strong class="accent-skill">Cloud Computing</strong>,
+          <strong class="accent-skill">Data Analytics</strong>, and
+          <strong class="accent-skill">Artificial Intelligence</strong>. My
+          curiosity in tech started with a fascination for how things work and
+          has evolved into a passion for building digital solutions that blend
+          <strong>functionality</strong> and <strong>creativity</strong>.
+        </p>
+
+        <p>
+          <span class="bullet">&#10003;</span> I'm currently sharpening my
+          skills in <strong class="accent-skill">JavaScript</strong>,
+          <strong class="accent-skill">HTML</strong>, and
+          <strong class="accent-skill">CSS</strong> through
+          <strong class="accent-skill">SheCodes</strong> and
+          <strong class="accent-skill">OpenEDG</strong>, learning to design and
+          develop interactive, user-friendly websites while deepening my
+          understanding of modern programming concepts.
+        </p>
+
+        <p>
+          <span class="bullet">&#10003;</span> I enjoy transforming ideas into
+          real experiences, whether it's designing
+          <strong
+            >sleek interfaces , improving user interaction, or making technology
+            more accessible.</strong
           >
-          My curiosity in tech started with a curiosity for how things work and
-          evolved into a love for building digital solutions that blend
-          functionality and creativity.
-        </p>
-        <p>
-          I'm currently sharpening my <strong>Javascript, HTML,</strong> and
-          <strong>CSS</strong> skills through <strong>SheCodes</strong> and
-          <strong>OpenEDG</strong>, where I'm learning to design and develop
-          interactive, user-friendly websites while deepening my understanding
-          of modern programming concepts.
-        </p>
-        <p>
-          I enjoy transforming ideas into real experiences, whether it's
-          designing sleek interfaces, improving user interaction, or making
-          technology more accessible. I'm passionate about continous growth and
-          excited to keep exploring the world of web development.
+          I'm passionate about continuous growth and excited to keep exploring
+          the world of web development.
         </p>
       </div>
+
       <!-- Skills Section -->
-      <div class="skills-sect">
+      <div id="skills" class="skills-sect">
         <h4>What I Create</h4>
         <p class="skills-sect-description">
           Here’s my little digital toolkit, everything I use to code, design,
           and make the web a prettier place:
         </p>
-        <div class="skill">
-          <p class="skill-name">Python</p>
+        <div class="skill" data-skill-level="60%">
+          <span class="skill-name">Python</span>
           <div class="skill-bar">
             <div class="skill-level intermediate"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">JavaScript</p>
+        <div class="skill" data-skill-level="30%">
+          <span class="skill-name">JavaScript</span>
           <div class="skill-bar">
             <div class="skill-level beginner"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">HTML</p>
+        <div class="skill" data-skill-level="60%">
+          <span class="skill-name">HTML</span>
           <div class="skill-bar">
             <div class="skill-level intermediate"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">CSS</p>
+        <div class="skill" data-skill-level="60%">
+          <span class="skill-name">CSS</span>
           <div class="skill-bar">
             <div class="skill-level intermediate"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">SQL</p>
+        <div class="skill" data-skill-level="30%">
+          <span class="skill-name">SQL </span>
           <div class="skill-bar">
             <div class="skill-level beginner"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">Power BI</p>
+        <div class="skill" data-skill-level="60%">
+          <span class="skill-name">Power BI</span>
           <div class="skill-bar">
             <div class="skill-level intermediate"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">Azure AI</p>
+        <div class="skill" data-skill-level="30%">
+          <span class="skill-name">Azure AI</span>
           <div class="skill-bar">
             <div class="skill-level beginner"></div>
           </div>
         </div>
-        <div class="skill">
-          <p class="skill-name">Cloud</p>
+        <div class="skill" data-skill-level="30%">
+          <span class="skill-name">Cloud</span>
           <div class="skill-bar">
             <div class="skill-level beginner"></div>
           </div>
         </div>
       </div>
+
       <!-- Education Section -->
-      <div class="education-sect">
+      <div id="education" class="education-sect">
         <h3>My Journey</h3>
         <div class="roadmap">
           <div class="roadmap-step">
             <h4>Dynamic DNA</h4>
-            <p class="date">&bull;Current</p>
-            <p>Systemms Development NQF Level 4</p>
+            <p class="date">&bull; Current</p>
+            <p>Systems Development NQF Level 4</p>
           </div>
           <div class="roadmap-step">
             <h4>Afrika Tikkun Services (FMTALI)</h4>
-            <p class="date">&bull;2024-2025</p>
+            <p class="date">&bull; 2024-2025</p>
             <p>Software Development and Data Analytics Trainee</p>
             <div class="arrow">&#8593;</div>
           </div>
           <div class="roadmap-step">
             <h4>Basa Protea Glen Combined School</h4>
-            <p class="date">&bull;2022</p>
+            <p class="date">&bull; 2022</p>
             <p>High School Education</p>
             <div class="arrow">&#8593;</div>
           </div>
@@ -152,7 +168,7 @@
       </div>
 
       <!-- Certifications Section -->
-      <div class="certifications-sect">
+      <div id="certifications" class="certifications-sect">
         <h3>Certifications</h3>
         <div class="timeline">
           <div class="timeline-item">
@@ -229,7 +245,7 @@
       </div>
 
       <!-- Projects Section -->
-      <div class="projects-sect">
+      <div id="projects" class="projects-sect">
         <h3>Projects</h3>
         <p class="projects-intro">
           These are some of my small but proud projects, including my portfolio
@@ -262,8 +278,8 @@
         </div>
       </div>
 
-      <!-- Contact Section -->
-      <div class="contact-me-sect">
+      <!-- Contact Me Section -->
+      <div id="contact" class="contact-me-sect">
         <h3>Let's Connect</h3>
         <p>Email | LinkedIn | GitHub</p>
       </div>
