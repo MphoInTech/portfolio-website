@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mpho's Portfolio Website</title>
     <link rel="stylesheet" href="aesthetic.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <!--Navigation Section-->
@@ -18,7 +19,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
-        <button class="download-CV">Download my CV</button>
+        <button class="download-CV"><i class="fas fa-cloud-download-alt"></i> Download my CV</button>
       </nav>
     </header>
     <main>
@@ -281,7 +282,12 @@
       <!-- Contact Me Section -->
       <div id="contact" class="contact-me-sect">
         <h3>Let's Connect</h3>
-        <p>Email | LinkedIn | GitHub</p>
+          <button class="contact-btn" onclickk="handleEmailClick()"><i class="fas fa-envelope fa-lg"></i>
+          </button>
+          <button class="contact-btn" onclick="handleLinkedInClick()"><i class="fab fa-linkedin fa-lg"></i>
+          </button>
+          <button class="contact-btn" onclick="handleGitHubClick()"><i class="fab fa-github fa-lg"></i>
+        </div>
       </div>
     </main>
 

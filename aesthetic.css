@@ -157,7 +157,6 @@ img {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-
 .LinkedIn {
   background-color: #cca8e9;
   color: #fff;
@@ -610,6 +609,45 @@ h4 {
   border: dotted 2px #c3bef0;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 60px;
+}
+
+.contact-me-sect p {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #cca8e9;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #cca8e9;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+.contact-btn:hover {
+  color: #cca8e9;
+  background-color: white;
+  cursor: pointer;
+}
+.contact-btn {
+  width: 50px;
+  height: 50px;
 }
 .no-select {
   cursor: not-allowed;
@@ -626,4 +664,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Poppins", sans-serif;
 }

@@ -199,3 +199,16 @@ function initCertificationsAnimation() {
 
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", initCertificationsAnimation);
+
+//Contact buttons
+function handleEmailClick() {
+  window.location.href = "mailto:dimakatsom0905@gmail.com";
+}
+
+function handleLinkedInClick() {
+  window.open("https://www.linkedin.com/in/mpho-modise-b47b432a7/", "_blank");
+}
+
+function handleGitHubClick() {
+  window.open("https://github.com/MphoInTech", "_blank");
+}
