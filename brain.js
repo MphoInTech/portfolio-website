@@ -200,11 +200,42 @@ function initCertificationsAnimation() {
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", initCertificationsAnimation);
 
-//Contact buttons
+//Email button
 function handleEmailClick() {
-  window.location.href = "mailto:dimakatsom0905@gmail.com";
+  // Give user options
+  const userChoice = confirm(
+    "Click OK to email me directly, or Cancel to copy my email address."
+  );
+
+  if (userChoice) {
+    // Open email client
+    window.location.href =
+      "mailto:your-email@example.com?subject=Hello%20from%20your%20website";
+  } else {
+    // Copy to clipboard
+    copyToClipboard("your-email@example.com");
+  }
 }
 
+function copyToClipboard(text) {
+  navigator.clipboard
+    .writeText(text)
+    .then(function () {
+      alert("Email copied to clipboard: " + text);
+    })
+    .catch(function (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      alert("Email copied to clipboard: " + text);
+    });
+}
+
+//Contact buttons
 function handleLinkedInClick() {
   window.open("https://www.linkedin.com/in/mpho-modise-b47b432a7/", "_blank");
 }

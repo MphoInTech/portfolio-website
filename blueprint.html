@@ -19,7 +19,9 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
-        <button class="download-CV"><i class="fas fa-cloud-download-alt"></i> Download my CV</button>
+        <a href="C:\Users\Mpho.Modise\OneDrive - Dynamic DNA (PTY) LTD\Desktop\portfolio website\documents\MPHO DIMAKATSO MODISE CV.pdf" download="MPHO DIMAKATSO MODISE CV.pdf" class="download-CV">
+          <i class="fas fa-cloud-download-alt"></i> Download my CV
+        </a>
       </nav>
     </header>
     <main>
@@ -34,16 +36,16 @@
               I enjoy building sleek, functional websites that make an impact.
               Clean code, creative ideas and good vibes only.
             </p>
-            <a href="#certifications"
-              ><button class="certs">Certifications</button></a
+            <a class="certs" href="#certifications"
+              >Certifications <i class="fas fa-scroll"></i></a
             >
           </div>
         </div>
         <div class="pic-and-buttns">
           <img src="images/IMG_0503.JPG" alt="Picture of Mpho Modise" />
           <div class="buttons">
-            <button class="LinkedIn">Connect with me</button>
-            <button class="GitHub">Check out my profile</button>
+            <button class="LinkedIn" onclick="handleLinkedInClick()">Connect with me <i class="fab fa-linkedin fa-lg"></i></button>
+            <button class="GitHub" onclick="handleGitHubClick()">Check out my profile <i class="fab fa-github fa-lg"></i></button>
           </div>
         </div>
       </div>
@@ -282,11 +284,12 @@
       <!-- Contact Me Section -->
       <div id="contact" class="contact-me-sect">
         <h3>Let's Connect</h3>
-          <button class="contact-btn" onclickk="handleEmailClick()"><i class="fas fa-envelope fa-lg"></i>
+          <button class="contact-btn" onclick="handleEmailClick()"><i class="fas fa-envelope fa-lg"></i>
           </button>
           <button class="contact-btn" onclick="handleLinkedInClick()"><i class="fab fa-linkedin fa-lg"></i>
           </button>
           <button class="contact-btn" onclick="handleGitHubClick()"><i class="fab fa-github fa-lg"></i>
+          </button>
         </div>
       </div>
     </main>
