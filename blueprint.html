@@ -263,25 +263,25 @@
               <div class="project-icon"></div>
                   <h4><i class="fas fa-laptop"></i></h4>
                   <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and certifications.👩🏽‍💻 Designed with a light, modern color scheme and smooth hover effects for a clean user experience.</p>
-                  <button class ="view-btn">Click Me!</button>  
+                  <button class ="view-btn portfolio-website" onclick="handlePortflioWebsiteClick()" >Click Me!</button>  
             </div>
             <div class="project-card">
               <div class="project-icon"></div>
                   <h4><i class="fas fa-plane"></i></h4>
                   <p>A simple and interactive webpage about my favorite hobby, travelling! ✈️ </br>Features a theme toggle, responsive image grid, and a personalized feedback button built with HTML, CSS, and JavaScript.</p>
-                  <button class ="view-btn">Click Me!</button>  
+                  <button class ="view-btn favorite-hobby" onclick="handleFavoriteHobbyClick()">Click Me!</button>  
             </div>
             <div class="project-card">
               <div class="project-icon"></div>
                   <h4><i class="fas fa-film"></i></h4>
                   <p>A simple JavaScript program that stores movies and their IMDb ratings, then displays movies with ratings below and above 7. 🎥</p>
-                  <button class ="view-btn">Click Me!</button>  
+                  <button class ="view-btn movie-filter" onclick="handleMovieFilterClick()">Click Me!</button>  
             </div>
             <div class="project-card">
               <div class="project-icon"></div>
                   <h4><i class="fas fa-shopping-cart"></i></h4>
                   <p>This is a simple, interactive grocery list application built with Python.🛒</br> This is my first mini app in Python, and I’m using it as a way to refresh my skills while reminding myself of fundamental concepts like variables, strings, loops, and lists.</p>
-                  <button class ="view-btn">Click Me!</button>  
+                  <button class ="view-btn list-it" onclick="handleListItClick()">Click Me!</button>  
             </div>
           </div>
         </div>
@@ -296,13 +296,12 @@
         </div>
       </div>
       
-
       <!-- Contact Me Section -->
       <div id="contact" class="contact-me-sect">
         <h3>Let's Connect</h3>
-          <button class="contact-btn" onclick="handleEmailClick()"><i class="fas fa-envelope fa-lg"></i>
-          </button>
           <button class="contact-btn" onclick="handleLinkedInClick()">Connect with me <i class="fab fa-linkedin fa-lg"></i>
+          </button>
+          <button class="contact-btn" onclick="handleEmailClick()"><i class="fas fa-envelope fa-lg"></i>
           </button>
           <button class="contact-btn" onclick="handleGitHubClick()">Check out my profile <i class="fab fa-github fa-lg"></i>
           </button>

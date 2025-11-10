@@ -263,6 +263,23 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCarousel();
 });
 
+// Poject Links
+function handlePortflioWebsiteClick() {
+  window.open("https://github.com/MphoInTech/portfolio-website", "_blank");
+}
+function handleFavoriteHobbyClick() {
+  window.open(
+    "https://github.com/MphoInTech/SheCodesProject2-My-favourite-hobby-",
+    "_blank"
+  );
+}
+function handleMovieFilterClick() {
+  window.open("https://github.com/MphoInTech/movie-filter-js", "_blank");
+}
+function handleListItClick() {
+  window.open("https://github.com/MphoInTech/MiniGroceryApp", "_blank");
+}
+
 //Contact buttons
 function handleEmailClick() {
   const email = "dimakatsom0905@gmail.com";
