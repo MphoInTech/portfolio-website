@@ -53,7 +53,7 @@ function type() {
 
 window.onload = type;
 
-// Add this JavaScript to handle the hover animation
+// Handle the hover animation
 function initSkillBarHover() {
   const skills = document.querySelectorAll(".skill");
 
@@ -92,7 +92,7 @@ function initSkillBarHover() {
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", initSkillBarHover);
 
-// Education roadmap scroll animation - Smooth version
+// Education roadmap scroll animation
 function initRoadmapAnimation() {
   const roadmapSteps = document.querySelectorAll(".roadmap-step");
   const roadmap = document.querySelector(".roadmap");
@@ -200,42 +200,77 @@ function initCertificationsAnimation() {
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", initCertificationsAnimation);
 
-//Email button
-function handleEmailClick() {
-  // Give user options
-  const userChoice = confirm(
-    "Click OK to email me directly, or Cancel to copy my email address."
-  );
+// Carousel functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".carousel-track");
+  const cards = document.querySelectorAll(".project-card");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
 
-  if (userChoice) {
-    // Open email client
-    window.location.href =
-      "mailto:your-email@example.com?subject=Hello%20from%20your%20website";
-  } else {
-    // Copy to clipboard
-    copyToClipboard("your-email@example.com");
+  let currentIndex = 0;
+  const container = document.querySelector(".carousel-container");
+
+  // Update carousel position
+  function updateCarousel() {
+    const cardWidth = container.offsetWidth;
+    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    updateButtonStates();
   }
-}
 
-function copyToClipboard(text) {
-  navigator.clipboard
-    .writeText(text)
-    .then(function () {
-      alert("Email copied to clipboard: " + text);
-    })
-    .catch(function (err) {
-      // Fallback for older browsers
-      const textArea = document.createElement("textarea");
-      textArea.value = text;
-      document.body.appendChild(textArea);
-      textArea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textArea);
-      alert("Email copied to clipboard: " + text);
-    });
-}
+  // Update button states (disable at ends)
+  function updateButtonStates() {
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === cards.length - 1;
+
+    // Optional: Add visual feedback for disabled state
+    if (prevBtn.disabled) {
+      prevBtn.style.opacity = "0.5";
+      prevBtn.style.cursor = "not-allowed";
+    } else {
+      prevBtn.style.opacity = "1";
+      prevBtn.style.cursor = "pointer";
+    }
+
+    if (nextBtn.disabled) {
+      nextBtn.style.opacity = "0.5";
+      nextBtn.style.cursor = "not-allowed";
+    } else {
+      nextBtn.style.opacity = "1";
+      nextBtn.style.cursor = "pointer";
+    }
+  }
+
+  // Next button click
+  nextBtn.addEventListener("click", function () {
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  // Previous button click
+  prevBtn.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  // Update on window resize
+  window.addEventListener("resize", updateCarousel);
+
+  // Initialize
+  updateCarousel();
+});
 
 //Contact buttons
+function handleEmailClick() {
+  const email = "dimakatsom0905@gmail.com";
+
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email copied to clipboard! 📧");
+  });
+}
 function handleLinkedInClick() {
   window.open("https://www.linkedin.com/in/mpho-modise-b47b432a7/", "_blank");
 }

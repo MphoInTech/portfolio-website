@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
+
     <!--Navigation Section-->
     <header>
       <nav>
@@ -19,16 +20,17 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
-        <a href="C:\Users\Mpho.Modise\OneDrive - Dynamic DNA (PTY) LTD\Desktop\portfolio website\documents\MPHO DIMAKATSO MODISE CV.pdf" download="MPHO DIMAKATSO MODISE CV.pdf" class="download-CV">
+        <a href="documents\MPHO_DIMAKATSO_MODISE_CV.pdf" download="MPHO_DIMAKATSO_MODISE_CV.pdf" class="download-CV">
           <i class="fas fa-cloud-download-alt"></i> Download my CV
         </a>
       </nav>
     </header>
     <main>
+
       <!-- About Me Summary Section -->
       <div class="abt-summary">
         <div class="text">
-          <div class="text-and-certs">
+          <div class="text">
             <h2>
               Hi, my name is <span class="name">Mpho Dimakatso Modise.</span>
             </h2>
@@ -36,16 +38,16 @@
               I enjoy building sleek, functional websites that make an impact.
               Clean code, creative ideas and good vibes only.
             </p>
-            <a class="certs" href="#certifications"
-              >Certifications <i class="fas fa-scroll"></i></a
-            >
           </div>
         </div>
         <div class="pic-and-buttns">
           <img src="images/IMG_0503.JPG" alt="Picture of Mpho Modise" />
           <div class="buttons">
-            <button class="LinkedIn" onclick="handleLinkedInClick()">Connect with me <i class="fab fa-linkedin fa-lg"></i></button>
-            <button class="GitHub" onclick="handleGitHubClick()">Check out my profile <i class="fab fa-github fa-lg"></i></button>
+            <a class="Certifications" href="#certifications" aria-label="View Certifications">
+              <i class="fas fa-scroll"></i>
+            </a>
+            <button class="LinkedIn" onclick="handleLinkedInClick()"> <i class="fab fa-linkedin fa-lg"></i></button>
+            <button class="GitHub" onclick="handleGitHubClick()"> <i class="fab fa-github fa-lg"></i></button>
           </div>
         </div>
       </div>
@@ -255,40 +257,54 @@
           website. Each represents a milestone as I continue to learn and
           improve my craft.
         </p>
-        <div class="carousel">
+        <div class="carousel-container">
           <div class="carousel-track">
-            <div class="slide active">
-              <img />
-              <h4>Portfolio Website</h4>
-              <p></p>
+            <div class="project-card">
+              <div class="project-icon"></div>
+                  <h4><i class="fas fa-laptop"></i></h4>
+                  <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and certifications.👩🏽‍💻 Designed with a light, modern color scheme and smooth hover effects for a clean user experience.</p>
+                  <button class ="view-btn">Click Me!</button>  
             </div>
-            <div class="slide">
-              <img />
-              <h4>My Favorite Hobby</h4>
-              <p></p>
+            <div class="project-card">
+              <div class="project-icon"></div>
+                  <h4><i class="fas fa-plane"></i></h4>
+                  <p>A simple and interactive webpage about my favorite hobby, travelling! ✈️ </br>Features a theme toggle, responsive image grid, and a personalized feedback button built with HTML, CSS, and JavaScript.</p>
+                  <button class ="view-btn">Click Me!</button>  
             </div>
-            <div class="slide">
-              <img />
-              <h4>Movie Filter</h4>
-              <p></p>
+            <div class="project-card">
+              <div class="project-icon"></div>
+                  <h4><i class="fas fa-film"></i></h4>
+                  <p>A simple JavaScript program that stores movies and their IMDb ratings, then displays movies with ratings below and above 7. 🎥</p>
+                  <button class ="view-btn">Click Me!</button>  
             </div>
-            <div class="slide">
-              <img />
-              <h4>Mini Grocery App</h4>
-              <p></p>
+            <div class="project-card">
+              <div class="project-icon"></div>
+                  <h4><i class="fas fa-shopping-cart"></i></h4>
+                  <p>This is a simple, interactive grocery list application built with Python.🛒</br> This is my first mini app in Python, and I’m using it as a way to refresh my skills while reminding myself of fundamental concepts like variables, strings, loops, and lists.</p>
+                  <button class ="view-btn">Click Me!</button>  
             </div>
           </div>
         </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-btn prev-btn">
+            <i class="fas fa-chevron-left"></i> Previous
+          </button>
+          <button class="carousel-btn next-btn">
+            Next <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
+      
 
       <!-- Contact Me Section -->
       <div id="contact" class="contact-me-sect">
         <h3>Let's Connect</h3>
           <button class="contact-btn" onclick="handleEmailClick()"><i class="fas fa-envelope fa-lg"></i>
           </button>
-          <button class="contact-btn" onclick="handleLinkedInClick()"><i class="fab fa-linkedin fa-lg"></i>
+          <button class="contact-btn" onclick="handleLinkedInClick()">Connect with me <i class="fab fa-linkedin fa-lg"></i>
           </button>
-          <button class="contact-btn" onclick="handleGitHubClick()"><i class="fab fa-github fa-lg"></i>
+          <button class="contact-btn" onclick="handleGitHubClick()">Check out my profile <i class="fab fa-github fa-lg"></i>
           </button>
         </div>
       </div>
