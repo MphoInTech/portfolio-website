@@ -39,13 +39,13 @@ This portfolio was inspired by incredible creators who influenced both the layou
 ✨ **Future updates** I’m planning to add:  
 - 👥 **Sign Up & Login** — to let users subscribe for updates on my educational milestones and new projects  
 - 📧 **Active Email Button** — instead of just copying my email, users will be able to send me a message directly  
-- 🖼️ **Background Image ** — might finally add one for fun 😄  
+- 🖼️ **Background Image** — might finally add one for fun 😄  
 
 ---
 
 ## 🚀 Live Demo  
 
-🖥️ **Hosted on Netlify:** [View My Portfolio](https://your-netlify-link-here.netlify.app)  
+🖥️ **Hosted on Netlify:** [View My Portfolio](https://mphos-portfolio-website.netlify.app/)  
 
 ---
 
